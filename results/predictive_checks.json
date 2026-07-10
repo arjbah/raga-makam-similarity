@@ -1,0 +1,22 @@
+{
+  "rhythm_only": {
+    "accuracy": 0.72,
+    "balanced_accuracy": 0.7311568290530812,
+    "n": 475
+  },
+  "melody_only": {
+    "accuracy": 0.8189473684210526,
+    "balanced_accuracy": 0.8567315283518321,
+    "n": 475
+  },
+  "combined": {
+    "accuracy": 0.8505263157894737,
+    "balanced_accuracy": 0.8726141271536711,
+    "n": 475
+  },
+  "with_controls": {
+    "accuracy": 0.8926315789473684,
+    "balanced_accuracy": 0.8928969488691776,
+    "n": 475
+  }
+}

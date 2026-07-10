@@ -1,0 +1,40 @@
+{
+  "n_retained": 475,
+  "n_sazsemaisi": 122,
+  "n_turku": 353,
+  "features": {
+    "rhythmic_complexity": {
+      "n_sazsemaisi": 122,
+      "n_turku": 353,
+      "difference": 0.28357041607481515,
+      "p_value": 4.999750012499375e-05,
+      "effect_size": 0.8792075434690871
+    },
+    "note_density": {
+      "n_sazsemaisi": 122,
+      "n_turku": 353,
+      "difference": -0.5956828916731851,
+      "p_value": 4.999750012499375e-05,
+      "effect_size": -0.9231735658638206
+    },
+    "pitch_class_entropy": {
+      "n_sazsemaisi": 122,
+      "n_turku": 353,
+      "difference": 0.37059739077660225,
+      "p_value": 4.999750012499375e-05,
+      "effect_size": 1.7453040447449772
+    },
+    "phase_entropy": {
+      "n_sazsemaisi": 122,
+      "n_turku": 353,
+      "difference": -0.00894441097858012,
+      "p_value": 4.999750012499375e-05,
+      "effect_size": -0.4375810881705902
+    },
+    "matched_rhythmic_complexity": {
+      "n_pairs": 122,
+      "mean_difference": 0.28508681163823446,
+      "median_difference": 0.2525569350755459
+    }
+  }
+}
