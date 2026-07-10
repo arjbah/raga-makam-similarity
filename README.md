@@ -15,11 +15,11 @@ Code and exported results for symbolic makam-raga similarity analysis.
 	- `stats.json`
 - `.gitignore`, `LICENSE`, `README.md`
 
-## Important Scope Note
+## Sourcing datasets
 
-This repository currently does not include raw data folders such as `data_turkish/`, `data_indian/`, or `symbtr/`, and does not include manuscript folders such as `paper/`.
+This repository currently does not include raw data folders such as `data_turkish/`, `data_indian/`, or `symbtr/`. Some scripts in `src/` and `scripts/` expect those external folders. These datasets can be sourced from [Karaosmanoğlu et al. SymbTr v3](https://zenodo.org/records/15470412) and [Korade et al. Indian Raga Notation Dataset](https://github.com/sohamkorade/indian-raga-dataset) respectively.
 
-Some scripts in `src/` and `scripts/` expect those external folders. The tracked `results/` files are the precomputed outputs available in this repo.
+The tracked `results/` files are the precomputed outputs available in this repo.
 
 ## Running Code
 
