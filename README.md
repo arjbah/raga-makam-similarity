@@ -1,40 +1,39 @@
-# Computing Modal Similarity in Indian Art Music and Ottoman-Turkish Makam Music
+# Raga-Makam Similarity
 
-Code, data processing pipeline, and manuscript sources for a symbolic cross-cultural study of modal similarity between Turkish makam and Indian raga corpora.
+Code and exported results for symbolic makam-raga similarity analysis.
 
-## Repository Contents
+## What Is In This Repo
 
-- `paper/`: ISMIR-style manuscript sources (`main.tex`) and bibliography.
-- `src/`: end-to-end analysis scripts (ingestion, normalization, features, similarity, tests, figures, paper generation).
-- `data/`: processed tables and intermediate outputs used by the paper.
-- `data_turkish/`: Turkish symbolic files (raw corpus subset/full set).
-- `data_indian/`: Indian notation corpus and auxiliary analysis files.
-- `figures/`: manuscript figures.
-- `results/`: exported analysis artifacts.
+- `src/`: 11-step research pipeline scripts plus `run_pipeline.py`
+- `scripts/`: utility/analysis scripts for manifest building, statistics, and table/figure generation
+- `results/`: exported artifacts currently tracked in this repo
+	- `features.csv`
+	- `label_map.csv`
+	- `manifest.csv`
+	- `matched_pairs.csv`
+	- `predictive_checks.json`
+	- `stats.json`
+- `.gitignore`, `LICENSE`, `README.md`
 
-## Reproducibility
+## Important Scope Note
 
-Run the full pipeline from the project root:
+This repository currently does not include raw data folders such as `data_turkish/`, `data_indian/`, or `symbtr/`, and does not include manuscript folders such as `paper/`.
+
+Some scripts in `src/` and `scripts/` expect those external folders. The tracked `results/` files are the precomputed outputs available in this repo.
+
+## Running Code
+
+If you have the required external data directories in place, you can run:
 
 ```bash
 python src/run_pipeline.py
 ```
 
-Compile the paper:
+Or run utilities individually, for example:
 
 ```bash
-pdflatex -interaction=nonstopmode -halt-on-error -output-directory=paper paper/main.tex
+python scripts/symbtr_pipeline.py
 ```
-
-## Notes
-
-- The comparison is tonic-relative and operates in 12 pitch classes.
-- Turkish microtonal detail is intentionally collapsed for cross-corpus comparability.
-- Top-pair exports are deduplicated by manuscript display labels to avoid repeated rows.
-
-## Citation
-
-If you use this repository, cite the accompanying manuscript in `paper/main.tex`.
 
 ## Author
 
